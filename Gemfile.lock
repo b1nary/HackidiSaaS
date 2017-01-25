@@ -1,6 +1,6 @@
 GIT
-  remote: git://github.com/plataformatec/devise.git
-  revision: 88724e10adaf9ffd1d8dbfbaadda2b9d40de756a
+  remote: https://github.com/plataformatec/devise
+  revision: 25a3eeb30aaceec54a753af6b8c732678f6dacb5
   branch: master
   specs:
     devise (4.2.0)
@@ -11,7 +11,7 @@ GIT
       warden (~> 1.2.3)
 
 GIT
-  remote: git://github.com/rails/sass-rails.git
+  remote: https://github.com/rails/sass-rails
   revision: dfbcc6a53653d8908007e26324a0f299f026ec4f
   specs:
     sass-rails (6.0.0.beta1)

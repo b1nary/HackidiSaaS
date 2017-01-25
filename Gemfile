@@ -4,7 +4,7 @@ gem 'rails', '~> 5.0.0'
 gem 'pg'
 gem 'puma', '~> 3.0'
 
-gem 'sass-rails', github: 'rails/sass-rails'
+gem 'sass-rails', git: 'https://github.com/rails/sass-rails'
 gem 'uglifier', '>= 1.3.0'
 
 gem 'rename'
@@ -30,7 +30,7 @@ gem 'rails_admin'
 gem 'metamagic'
 
 # pin devise to avoid the chain startup issue
-gem 'devise', :github => 'plataformatec/devise', :branch => 'master'
+gem 'devise', git: 'https://github.com/plataformatec/devise', branch: 'master'
 
 group :development, :test do
   gem 'byebug', platform: :mri
