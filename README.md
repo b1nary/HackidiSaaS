@@ -4,7 +4,7 @@
 [![Code Climate Coverage](https://img.shields.io/codeclimate/coverage/github/b1nary/HackidiSaaS.svg?style=flat-square)](https://codeclimate.com/github/b1nary/HackidiSaaS/coverage)
 [![Code Climate Issues](https://img.shields.io/codeclimate/issues/github/b1nary/HackidiSaaS.svg?style=flat-square)](https://codeclimate.com/github/b1nary/HackidiSaaS/issues)
 [![GitHub issues](https://img.shields.io/github/issues/b1nary/HackidiSaaS.svg?style=flat-square)](https://github.com/b1nary/HackidiSaaS/issues)
-[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
 # :squirrel: HackidiSaaS
 
