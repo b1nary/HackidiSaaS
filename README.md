@@ -1,9 +1,10 @@
-[![Beerpay](https://img.shields.io/beerpay/b1nary/HackidiSaaS.svg)](https://beerpay.io/b1nary/HackidiSaaS)
-[![Travis](https://img.shields.io/travis/b1nary/HackidiSaaS.svg)](https://travis-ci.org/b1nary/HackidiSaaS)
-[![Code Climate](https://img.shields.io/codeclimate/github/b1nary/HackidiSaaS.svg)]()
-[![Code Climate Coverage](https://img.shields.io/codeclimate/coverage/github/b1nary/HackidiSaaS.svg)]()
-[![Code Climate Issues](https://img.shields.io/codeclimate/issues/github/b1nary/HackidiSaaS.svg)]()
-[![GitHub issues](https://img.shields.io/github/issues/b1nary/HackidiSaaS.svg)](https://github.com/b1nary/HackidiSaaS/issues)
+[![Beerpay](https://img.shields.io/beerpay/b1nary/HackidiSaaS.svg?style=flat-square)](https://beerpay.io/b1nary/HackidiSaaS)
+[![Travis](https://img.shields.io/travis/b1nary/HackidiSaaS.svg?style=flat-square)](https://travis-ci.org/b1nary/HackidiSaaS)
+[![Code Climate](https://img.shields.io/codeclimate/github/b1nary/HackidiSaaS.svg?style=flat-square)](https://codeclimate.com/github/b1nary/HackidiSaaS)
+[![Code Climate Coverage](https://img.shields.io/codeclimate/coverage/github/b1nary/HackidiSaaS.svg?style=flat-square)](https://codeclimate.com/github/b1nary/HackidiSaaS/coverage)
+[![Code Climate Issues](https://img.shields.io/codeclimate/issues/github/b1nary/HackidiSaaS.svg?style=flat-square)](https://codeclimate.com/github/b1nary/HackidiSaaS/issues)
+[![GitHub issues](https://img.shields.io/github/issues/b1nary/HackidiSaaS.svg?style=flat-square)](https://github.com/b1nary/HackidiSaaS/issues)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 # :squirrel: HackidiSaaS
 
