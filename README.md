@@ -2,6 +2,8 @@
 
 A **Rails 5** starter template to ship your ~~projects~~ **SaaS** even faster.
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 Shipped Features:
 
 * build with [Rails 5](http://rubyonrails.org/) & [Bootstrap 4](https://github.com/twbs/bootstrap-sass)
