@@ -28,6 +28,7 @@ Simply go in the directory and type:
 
 - [ ] Change public/login.jpg (Seen on login/registration pages)
 - [ ] Setup slack notification webhook in `config/initializers/slack_notifier.rb`
+- [ ] Add your Impressum & Privacy Policy
 
 ### Roadmap
 
