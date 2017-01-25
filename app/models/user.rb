@@ -24,10 +24,6 @@ class User < ApplicationRecord
     end
   end
 
-  def name
-    self.username || self.email
-  end
-
   private
 
   def user_created
