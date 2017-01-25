@@ -1,6 +1,6 @@
 # :squirrel: HackidiSaaS
 
-A **Rails 5** starter template to ship your projects even faster.
+A **Rails 5** starter template to ship your ~~projects~~ **SaaS** even faster.
 
 Shipped Features:
 
@@ -19,3 +19,15 @@ After cloning you most likely want to rename the application, this is why we inc
 Simply go in the directory and type:
 
     rails g rename:app_to YourName
+
+### Roadmap
+
+- [ ] Implement Stripe
+- [ ] Implement Paypal
+- [ ] Implement some Bitcoin based payment
+
+### Free to use
+
+The app is completely free, but i am and will put a lot of work into it so any motivational funds are appreciated.
+
+[![gitcheese.com](https://api.gitcheese.com/v1/projects/8b00c4a0-0260-4280-ae0a-40aaa15d6c6e/badges?type=1)](https://www.gitcheese.com/app/#/projects/8b00c4a0-0260-4280-ae0a-40aaa15d6c6e/pledges/create)
