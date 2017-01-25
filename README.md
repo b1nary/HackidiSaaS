@@ -1,3 +1,8 @@
+[![Travis](https://img.shields.io/travis/b1nary/HackidiSaaS.svg)]()
+[![Code Climate](https://img.shields.io/codeclimate/github/b1nary/HackidiSaaS.svg)]()
+[![Code Climate Coverage](https://img.shields.io/codeclimate/coverage/github/b1nary/HackidiSaaS.svg)]()
+[![Code Climate Issues](https://img.shields.io/codeclimate/issues/github/b1nary/HackidiSaaS.svg)]()
+
 # :squirrel: HackidiSaaS
 
 A **Rails 5** starter template to ship your ~~projects~~ **SaaS** even faster.
