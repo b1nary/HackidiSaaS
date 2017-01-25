@@ -8,3 +8,6 @@ before_script:
   - psql -c 'create database hackidisaas_test' -U postgres
 script:
   - RAILS_ENV=test bundle exec rake db:migrate --trace
+addons:
+    code_climate:
+        repo_token: 3c12d6dface455ff9ca83a158dfda06103dc91f1d011e54b461fbad2f4ff731d
