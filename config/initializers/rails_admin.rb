@@ -2,6 +2,13 @@ RailsAdmin.config do |config|
 
   ### Popular gems integration
 
+  config.authorize_with do |controller|
+    unless current_user.try(:admin?)
+      flash[:error] = "You are not an admin"
+      redirect_to "/"
+    end
+  end
+
   ## == Devise ==
   # config.authenticate_with do
   #   warden.authenticate! scope: :user
