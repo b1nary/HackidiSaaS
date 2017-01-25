@@ -25,7 +25,6 @@ gem 'nprogress-rails', '~> 0.2.0.2'
 gem 'bootstrap_form'
 gem 'font-awesome-rails'
 gem 'data-confirm-modal'
-
 gem 'rails_admin'
 
 # pin devise to avoid the chain startup issue

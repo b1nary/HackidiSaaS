@@ -22,6 +22,10 @@ Simply go in the directory and type:
 
     rails g rename:app_to YourName
 
+### Things to do after that:
+
+- [ ] Change public/login.jpg (Seen on login/registration pages)
+
 ### Roadmap
 
 - [ ] Implement Stripe
