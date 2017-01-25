@@ -14,6 +14,7 @@ Shipped Features:
 * [font-awesome-rails](https://github.com/bokmann/font-awesome-rails) for some easy icons.
 * [data-confirm-modal](https://github.com/ifad/data-confirm-modal) for some bootstrapy confirm dialogs
 * [slack-notifier](https://github.com/stevenosloan/slack-notifier) for slack based notifications
+* [rails_admin](https://github.com/sferik/rails_admin) CRUD admin interface
 
 ### Rename the application
 
