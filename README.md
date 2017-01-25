@@ -1,3 +1,4 @@
+[![Beerpay](https://img.shields.io/beerpay/b1nary/HackidiSaaS.svg)]()
 [![Travis](https://img.shields.io/travis/b1nary/HackidiSaaS.svg)]()
 [![Code Climate](https://img.shields.io/codeclimate/github/b1nary/HackidiSaaS.svg)]()
 [![Code Climate Coverage](https://img.shields.io/codeclimate/coverage/github/b1nary/HackidiSaaS.svg)]()
@@ -46,4 +47,4 @@ Simply go in the directory and type:
 
 The app is completely free, but i am and will put a lot of work into it so any motivational funds are appreciated.
 
-[![gitcheese.com](https://api.gitcheese.com/v1/projects/8b00c4a0-0260-4280-ae0a-40aaa15d6c6e/badges?type=1)](https://www.gitcheese.com/app/#/projects/8b00c4a0-0260-4280-ae0a-40aaa15d6c6e/pledges/create)
+[![Beerpay](https://beerpay.io/b1nary/HackidiSaaS/badge.svg?style=beer)](https://beerpay.io/b1nary/HackidiSaaS)

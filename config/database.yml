@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  database: <%= Rails.application.class.parent_name.downcase %>_wat
+  pool: 5
+
+development:
+  <<: *default
+  database: <%= Rails.application.class.parent_name.downcase %>_development
+
+test:
+  <<: *default
+  database: <%= Rails.application.class.parent_name.downcase %>_test
+
+production:
+  <<: *default
+  database: <%= Rails.application.class.parent_name.downcase %>_production
+  pool: 5
