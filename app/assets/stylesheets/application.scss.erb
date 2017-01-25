@@ -1,0 +1,24 @@
+/*
+ * This is the default application.scss file for your Rails application
+ * You can use CSS & SCSS, most likely you want to import other files
+ *
+ * @include "modules/some_other_file"
+ */
+
+@import "bootstrap-sprockets";
+// Edit theme variables here...
+@import "bootswatch/yeti/variables";
+@import "bootstrap";
+body { padding-top: 45px; }
+@import "bootswatch/yeti/bootswatch";
+
+$nprogress-color: #ffffff;
+$nprogress-height: 1px;
+$nprogress-zindex: 10100;
+@import 'nprogress';
+@import 'nprogress-bootstrap';
+@import 'nprogress-turbolinks5';
+
+@import 'parts/*';
+
+// yours CSS imports...

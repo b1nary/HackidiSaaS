@@ -1,0 +1,43 @@
+<div class="container-fluid container-login">
+  <br><br>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4>Log in</h4>
+          </div>
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-md-12">
+                <%= bootstrap_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+                  <%= f.text_field :login, autofocus: true, placeholder: "Username / Email", hide_label: true %>
+                  <%= f.password_field :password, autocomplete: "off", placeholder: "*************", hide_label: true %>
+
+                  <% if devise_mapping.rememberable? -%>
+                    <div class="field">
+                      <%= f.check_box :remember_me %>
+                    </div>
+                  <% end -%>
+
+                  <div class="actions">
+                    <span class="pull-right">
+                      <br>
+                      <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
+                        <%= link_to "Forgot your password?", new_password_path(resource_name) %><br />
+                      <% end -%>
+                    </span>
+                    <%= f.submit "Log in", class: "btn btn-primary" %>
+                    <%= link_to 'Or Register now!', new_user_registration_path, class: "btn btn-success" %>
+                  </div>
+                <% end %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= render 'partials/full_page_css' %>

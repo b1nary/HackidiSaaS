@@ -1,0 +1,36 @@
+<div class="container-fluid container-login">
+  <br><br>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4>Sign up</h4>
+          </div>
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-md-12">
+                <%= bootstrap_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+                  <%= devise_error_messages! %>
+
+                  <%= f.text_field :username, autofocus: true, placeholder: "Username", hide_label: true %>
+                  <%= f.email_field :email, placeholder: "email@example.com", hide_label: true %>
+
+                  <%= f.password_field :password, autocomplete: "off", help: "#{@minimum_password_length} characters minimum", placeholder: "*******", hide_label: true %>
+                  <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: "*******", hide_label: true %>
+
+                  <div class="actions">
+                    <%= f.submit "Sign Up", class: "btn btn-primary" %>
+                    <%= link_to 'Or login', new_user_session_path, class: "btn btn-default" %>
+                  </div>
+                <% end %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= render 'partials/full_page_css' %>

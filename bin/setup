@@ -1,0 +1,61 @@
+#!/usr/bin/env ruby
+require 'pathname'
+require 'fileutils'
+require 'securerandom'
+require 'yaml'
+include FileUtils
+
+# path to your application root.
+APP_ROOT = Pathname.new File.expand_path('../../', __FILE__)
+
+def system!(*args)
+  system(*args) || abort("\n== Command #{args} failed ==")
+end
+
+def random_keys
+  {
+    'secret_key_base' => SecureRandom.hex(64)
+  }
+end
+
+chdir APP_ROOT do
+  puts "################################"
+  puts "# Hackidihack Installer Script #"
+  puts "################################"
+  sleep 2
+  # This script is a starting point to setup your application.
+  # Add necessary setup steps to this file.
+
+  puts '== Installing dependencies =='
+  system! 'gem install bundler --conservative'
+  system('bundle check') || system!('bundle install')
+
+  puts "== Copying sample files =="
+  unless File.exist?('config/database.yml')
+    cp 'config/database.yml.sample', 'config/database.yml'
+  end
+
+  puts "== Create secrets.yml =="
+  unless File.exist?('config/secrets.yml')
+    secrets = {
+      'development' => random_keys,
+      'test' => random_keys,
+      'production' => random_keys
+    }
+    File.open('config/secrets.yml', 'w') {|f| f.write(secrets.to_yaml) }
+  end
+
+  puts "== Preparing database =="
+  system! 'rake db:create'
+  system! 'rake db:migrate'
+
+  puts "== Removing old logs and tempfiles =="
+  system! 'rake log:clear tmp:clear'
+
+  puts "== Custom Options =="
+  print ":: Enable Admin Interface with rails_admin? (y/n): "
+  $rails_admin = (if gets.downcase.chomp[0] == 'y'; true; else; false; end)
+  if !$rails_admin
+    File.open("Gemfile", "w"){ |f| f.write(File.read("Gemfile").gsub("gem 'rails_admin'\n",'')) }
+  end
+end

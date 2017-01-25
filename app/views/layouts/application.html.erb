@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="<%= I18n.locale %>">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title><%= Rails.application.class.parent_name %></title>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%= stylesheet_link_tag    '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' %>
+  <%= csrf_meta_tags %>
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <%= render 'partials/navigation' %>
+  <%= render 'partials/flash' %>
+
+  <%= yield %>
+
+  <footer id="footer">
+    <div class="container">
+      <hr>
+      <div class="row">
+        <div class="col-lg-12">
+          <span class="pull-right">
+            <%= link_to I18n.t('pages.impressum.title'), impressum_path %> /
+            <%= link_to I18n.t('pages.privacy_policy.title'), privacy_policy_path %>
+          </span>
+          <p>&hearts; <%= [2016, Time.now.year].uniq.join(' - ') %>, <%= Rails.application.class.parent_name %></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
