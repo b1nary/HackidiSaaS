@@ -27,6 +27,7 @@ gem 'font-awesome-rails'
 gem 'data-confirm-modal'
 gem 'slack-notifier'
 gem 'rails_admin'
+gem 'metamagic'
 
 # pin devise to avoid the chain startup issue
 gem 'devise', :github => 'plataformatec/devise', :branch => 'master'

@@ -5,7 +5,26 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title><%= Rails.application.class.parent_name %></title>
+  <%= metamagic site: Rails.application.class.parent_name,
+                title: [:title, :site],
+                separator: " - ",
+                description: "Rails 5 SaaS Template",
+                keywords: [:keywords, Rails.application.class.parent_name],
+                og: {
+                  title: Rails.application.class.parent_name,
+                  description: "Rails 5 SaaS Template",
+                  type: "website",
+                  url: request.original_url,
+                  image: "https://i.imgflip.com/1ic5h7.jpg"
+                },
+                twitter: {
+                  card: "summary_large_image",
+                  site: "@something_something",
+                  creator: "@talkb1nary",
+                  title: Rails.application.class.parent_name,
+                  description: "Rails 5 SaaS Template",
+                  image: "https://i.imgflip.com/1ic5h7.jpg"
+                } %>
 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>

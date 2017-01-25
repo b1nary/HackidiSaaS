@@ -115,6 +115,8 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.4)
       mime-types (>= 1.16, < 4)
+    metamagic (3.1.7)
+      rails (>= 3.0.0)
     method_source (0.8.2)
     mime-types (3.1)
       mime-types-data (~> 3.2015)
@@ -233,6 +235,7 @@ DEPENDENCIES
   jquery-rails
   jquery-turbolinks
   listen (~> 3.0.5)
+  metamagic
   nprogress-rails (~> 0.2.0.2)
   pg
   puma (~> 3.0)
