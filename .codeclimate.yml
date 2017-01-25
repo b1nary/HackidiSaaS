@@ -9,9 +9,6 @@ engines:
     config:
       languages:
       - ruby
-      - javascript
-      - python
-      - php
   eslint:
     enabled: true
   fixme:
@@ -37,3 +34,10 @@ exclude_paths:
 - db/
 - test/
 - vendor/
+
+engines:
+  eslint:
+    enabled: true
+    # Ignore rails defaults
+    exclude_fingerprints:
+    - 81f1db8cc66fe7d124f1ecde5904b4e5
