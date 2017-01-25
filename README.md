@@ -1,9 +1,9 @@
-[![Beerpay](https://img.shields.io/beerpay/b1nary/HackidiSaaS.svg)]()
-[![Travis](https://img.shields.io/travis/b1nary/HackidiSaaS.svg)]()
+[![Beerpay](https://img.shields.io/beerpay/b1nary/HackidiSaaS.svg)](https://beerpay.io/b1nary/HackidiSaaS)
+[![Travis](https://img.shields.io/travis/b1nary/HackidiSaaS.svg)](https://travis-ci.org/b1nary/HackidiSaaS)
 [![Code Climate](https://img.shields.io/codeclimate/github/b1nary/HackidiSaaS.svg)]()
 [![Code Climate Coverage](https://img.shields.io/codeclimate/coverage/github/b1nary/HackidiSaaS.svg)]()
 [![Code Climate Issues](https://img.shields.io/codeclimate/issues/github/b1nary/HackidiSaaS.svg)]()
-[![GitHub issues](https://img.shields.io/github/issues/b1nary/HackidiSaaS.svg)]()
+[![GitHub issues](https://img.shields.io/github/issues/b1nary/HackidiSaaS.svg)](https://github.com/b1nary/HackidiSaaS/issues)
 
 # :squirrel: HackidiSaaS
 
