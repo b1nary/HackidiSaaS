@@ -1,0 +1,6 @@
+{
+  "name": "HackidiSaaS",
+  "description": "Rails 5 SaaS Template",
+  "repository": "https://github.com/b1nary/HackidiSaaS",
+  "keywords": ["rails", "ruby", "saas"]
+}
