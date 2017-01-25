@@ -13,6 +13,7 @@ Shipped Features:
 * [bootstrap_form](https://github.com/bootstrap-ruby/rails-bootstrap-forms) for easy bootstrap conform forms.
 * [font-awesome-rails](https://github.com/bokmann/font-awesome-rails) for some easy icons.
 * [data-confirm-modal](https://github.com/ifad/data-confirm-modal) for some bootstrapy confirm dialogs
+* [slack-notifier](https://github.com/stevenosloan/slack-notifier) for slack based notifications
 
 ### Rename the application
 
