@@ -230,7 +230,6 @@ DEPENDENCIES
   byebug
   data-confirm-modal
   devise!
-  font-awesome-rails
   jbuilder (~> 2.5)
   jquery-rails
   jquery-turbolinks

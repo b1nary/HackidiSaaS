@@ -2,9 +2,104 @@
           description: "Something awesome about your SaaS",
           keywords: ["SaaS", "Epic"] %>
 
-<div class="container">
-  <div class="page-header">
-    <h1>Home#index</h1>
+<header class="container-fluid">
+  <div class="container text-center">
+    <h1><%= fa_icon 'pied-piper' %> <%= Rails.application.class.parent_name %></h1>
+    <hr>
+    <h2>Rails 5 SaaS Template</h2>
   </div>
-  <p>Find me in app/views/home/index.html.erb</p>
+</header>
+
+<div class="container">
+  <br>
+  <p class="lead text-center">
+    <%= fa_icon 'arrow-right' %>&nbsp;
+    Allowing you to focus on business logic instead of building the whole boring SaaS stuff
+    &nbsp;<%= fa_icon 'arrow-left' %>
+  </p>
+  <hr>
+  <br>
+  <div class="row text-center reasons">
+    <div class="col-md-3 col-sm-6">
+      <img src="/icons/train.svg" alt="Ruby on Rails">
+      <h2>Build with Rails</h2>
+      <p class="lead">Build with the epic web application framework Ruby on Rails.</p>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <img src="/icons/souvenir.svg" alt="Made for Humans">
+      <h2>Made for humans</h2>
+      <p class="lead">Designed for humans, aliens, customers and developers</p>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <img src="/icons/backpack.svg" alt="Ruby on Rails">
+      <h2>Awesome Gems</h2>
+      <p class="lead">Packed with awesome gems to make your journey easier</p>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <img src="/icons/money.svg" alt="Save Money">
+      <h2>Save money</h2>
+      <p class="lead">Time is money and this pack can save you a lot of time</p>
+    </div>
+  </div>
+
+  <hr>
+  <div class="col-md-12 text-center">
+    <h2><%= fa_icon 'diamond' %>&nbsp; Ruby Gems & <%= fa_icon 'book' %> Libs included</h2>
+    <br>
+  </div>
+
+  <div class="row">
+    <% [{
+      title: "bootstrap_form",
+      link: "https://github.com/caike/bootstrap_form",
+      description: "Make all kind of forms bootstrap friendly"
+    },
+    {
+      title: "data-confirm-modal",
+      link: "https://github.com/bokmann/data-confirm-modal",
+      description: "Bootstrap confirm modals instead of alerts"
+    },
+    {
+      title: "slack-notifier",
+      link: "https://github.com/stevenosloan/slack-notifier",
+      description: "Create slack notifications for all kind of events"
+    },
+    {
+      title: "rails_admin",
+      link: "https://github.com/sferik/rails_admin",
+      description: "Drop in admin interface for your models"
+    },
+    {
+      title: "metamagic",
+      link: "https://github.com/lassebunk/metamagic",
+      description: "Metatags for SEO made simple"
+    },
+    {
+      title: "Devise",
+      link: "https://github.com/plataformatec/devise",
+      description: "Rails most mature user management system"
+    },
+    {
+      title: "NProgress",
+      link: "https://github.com/caarlos0/nprogress-rails",
+      description: "Adding a fancy loading bar for turbolinks"
+    },
+    {
+      title: "Bootswatch",
+      link: "https://github.com/maxim/bootswatch-rails",
+      description: "More beautiful bootstrap default themes"
+    },
+    {
+      title: "Bootstrap",
+      link: "https://github.com/twbs/bootstrap-sass",
+      description: "Probably the best CSS framework out there"
+    }].each do |gem| %>
+      <div class="col-md-4 col-sm-6">
+        <div class="panel panel-primary">
+          <div class="panel-heading"><a href="<%= gem[:link] %>" target="_blank" style="color:white"><%= gem[:title] %></a></div>
+          <div class="panel-body"><%= gem[:description] %></div>
+        </div>
+      </div>
+    <% end %>
+  </div>
 </div>

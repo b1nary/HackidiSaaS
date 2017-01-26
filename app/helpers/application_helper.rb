@@ -9,4 +9,8 @@ module ApplicationHelper
 
     meta options
   end
+
+  def fa_icon icon, options = {}
+    content_tag(:i, options.merge(class: "fa fa-#{icon}"))
+  end
 end
