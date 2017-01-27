@@ -8,7 +8,7 @@ class UserTest < ActiveSupport::TestCase
 
   test 'Password limit is enforced' do
     usr = User.create(username: "test", email: "test@email.com", password: "Pass")
-    assert_equal({password: ["is too short (minimum is 6 characters)"]}, usr.errors.messages)
+    assert_equal({password: ["is too short (minimum is 8 characters)"]}, usr.errors.messages)
   end
 
   test 'Username is required' do

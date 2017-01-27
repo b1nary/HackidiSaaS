@@ -6,11 +6,11 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
   validates :username,
-    :presence => true,
-    :uniqueness => {
-       :case_sensitive => false
+    presence: true,
+    uniqueness: {
+       case_sensitive: false
     }
-  validates_format_of :username, with: /\A[a-zA-Z0-9_\.]*\z/, :multiline => true
+  validates_format_of :username, with: /\A[a-zA-Z0-9_\.]*\z/, multiline: false
 
   after_create :user_created
   after_destroy :user_destroyed
