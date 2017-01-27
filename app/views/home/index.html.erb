@@ -2,7 +2,7 @@
           description: "Something awesome about your SaaS",
           keywords: ["SaaS", "Epic"] %>
 
-<header class="container-fluid">
+<header class="container-fluid container-image">
   <div class="container text-center">
     <h1><%= fa_icon 'pied-piper' %> <%= Rails.application.class.parent_name %></h1>
     <hr>
@@ -42,8 +42,39 @@
     </div>
   </div>
 
-  <hr>
-  <div class="col-md-12 text-center">
+  <br>
+</div>
+
+<div class="container-fluid container-image">
+  <div class="container">
+    <div class="row">
+      <% @plans.each do |plan| %>
+        <div class="col-md-4">
+          <div class="panel panel-<%= plan.bootstrap %> text-center">
+            <div class="panel-heading">
+              <br>
+              <big><%= plan.title %></big>
+              <h2><strong>$ <%= plan.price %></strong> <small style="color:white">/ month</small></h2>
+            </div>
+            <div class="panel-body">
+              <%= fa_icon 'check', class: "text-success" %> Something relevant<br>
+              <%= fa_icon 'check', class: "text-success" %> Something awesome<br>
+              <%= fa_icon 'check', class: "text-success" %> Something even more epic<br>
+            </div>
+            <div class="panel-footer">
+              <%= link_to 'Get started', new_user_registration_path(plan: plan.title), class: "btn btn-block btn-#{plan.bootstrap}" %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <br>
+  
+  <div class="text-center">
     <h2><%= fa_icon 'diamond' %>&nbsp; Ruby Gems & <%= fa_icon 'book' %> Libs included</h2>
     <br>
   </div>
@@ -56,7 +87,7 @@
     },
     {
       title: "data-confirm-modal",
-      link: "https://github.com/bokmann/data-confirm-modal",
+      link: "https://github.com/ifad/data-confirm-modal",
       description: "Bootstrap confirm modals instead of alerts"
     },
     {
