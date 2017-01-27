@@ -16,8 +16,14 @@
                   <%= f.text_field :username, autofocus: true, placeholder: "Username", hide_label: true %>
                   <%= f.email_field :email, placeholder: "email@example.com", hide_label: true %>
 
-                  <%= f.password_field :password, autocomplete: "off", help: "#{@minimum_password_length} characters minimum", placeholder: "*******", hide_label: true %>
-                  <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: "*******", hide_label: true %>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <%= f.password_field :password, autocomplete: "off", help: "#{@minimum_password_length} characters minimum", placeholder: "*******", hide_label: true %>
+                    </div>
+                    <div class="col-md-6">
+                      <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: "*******", hide_label: true %>
+                    </div>
+                  </div>
 
                   <div class="actions">
                     <%= f.submit "Sign Up", class: "btn btn-primary" %>
