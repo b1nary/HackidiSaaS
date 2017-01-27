@@ -13,9 +13,11 @@
                 <%= bootstrap_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
                   <%#= devise_error_messages! %>
 
+                  <%= f.select :plan_id, Plan.where(public: true).map {|plan| ["#{plan.title} - $ #{plan.price}", plan.id]}, hide_label: true, selected: (Plan.find_by(title: params[:plan]).id if params[:plan]) %>
+
                   <%= f.text_field :username, autofocus: true, placeholder: "Username", hide_label: true %>
                   <%= f.email_field :email, placeholder: "email@example.com", hide_label: true %>
-                  
+
                   <div class="row">
                     <div class="col-md-6">
                       <%= f.password_field :password, autocomplete: "off", help: "#{@minimum_password_length} characters minimum", placeholder: "*******", hide_label: true %>
