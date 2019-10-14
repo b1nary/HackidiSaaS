@@ -6,7 +6,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/b1nary/HackidiSaaS.svg?style=flat-square)](https://github.com/b1nary/HackidiSaaS/issues)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
-# ![Hackidi](http://i.imgur.com/abczFrv.jpg) HackidiSaaS
+# ![Hackidi](http://i.imgur.com/abczFrv.jpg) HackidiSaaS // DEPRECATED
 
 A **Rails 5** starter template to ship your ~~projects~~ **SaaS** even faster.
 
