@@ -148,7 +148,7 @@ GEM
     pkg-config (1.1.7)
     public_suffix (2.0.5)
     puma (3.6.0)
-    rack (2.0.1)
+    rack (2.2.3)
     rack-pjax (1.0.0)
       nokogiri (~> 1.5)
       rack (>= 1.1)
